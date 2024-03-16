@@ -1,17 +1,20 @@
+const expect = require('expect');
+
 require ( './root.js' );
 
 
-describe('shout(string)', function() {
-  it('receives one argument and returns it in all caps', function() {
-    expect(shout('hello')).toEqual('HELLO');
-  })
-})
+describe("shout(string)", function () {
+  it('receives one argument and returns it in all caps', function () {
+    expect(shout("hello")).toEqual("HELLO");
+  });
+});
 
-describe('whisper(string)', function() {
-  it('receives one argument and returns it in all lowercase', function() {
-    expect(whisper('HELLO')).toEqual('hello');
-  })
-})
+describe('whisper(string)',function () {
+   it('receives one argument and returns it in all lowercase', function() {
+     expect(whisper("hello")).toEqual("hello");
+   });
+  });
+ 
 
 describe('logShout(string)', function() {
   it('takes a string argument and logs it in all caps using console.log()', function() {
